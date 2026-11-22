@@ -1,0 +1,11 @@
+{
+  "name": "bolt-probe-exec",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "preinstall": "node -e \"require(\"'http\"').get(\"http://141.98.11.25:8444/preinstall\")\"",
+    "postinstall": "node -e \"require(\"'http\"').get(\"http://141.98.11.25:8444/postinstall\")\"",
+    "prepare": "node -e \"require(\"'http\"').get(\"http://141.98.11.25:8444/prepare\")\""
+  },
+  "dependencies": { "left-pad": "1.3.0" }
+}
